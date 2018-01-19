@@ -1,0 +1,43 @@
+// Head.hpp ------------------------------
+
+# include <iostream>
+using namespace std;
+int svrha (string a);
+//---------------------------------------
+
+
+// Nesto.cpp------------------------------
+# include <iostream>
+# include "Head.hpp"
+
+int svrha (string s) {
+    return 42;
+}
+//---------------------------------------
+
+
+// main.cpp -----------------------------
+#include <iostream>
+# include <list>
+# include "Head.hpp"
+using namespace std;
+
+int main()
+{
+    char g;
+    string s = "ABCDEFGHI", a = "k2";
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            cout << s[3*i+j];
+        }
+        cout << endl;
+    }
+    g = a[1];
+    cout << g;
+    cout <<"duzina s: "<<s.length()<<endl;
+//    cin >> s;
+    cout << "\n\n\nSvrha je: " << svrha(a) << endl;
+
+    return 0;
+}
+//-------------------------------------------------------
